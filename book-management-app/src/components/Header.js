@@ -7,10 +7,10 @@ const Header = () => {
       <h1>Book Management App</h1>
       <hr />
       <div className="links">
-        <NavLink to="/" className="link" activeClassName="active" exact>
+        <NavLink to="/" className="link" activeclassname="active" exact="true">
           Books List
         </NavLink>
-        <NavLink to="/add" className="link" activeClassName="active">
+        <NavLink to="/add" className="link" activeclassname="active">
           Add Book
         </NavLink>
       </div>
