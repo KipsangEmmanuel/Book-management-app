@@ -1,20 +1,21 @@
 import React from 'react';
-import { Navlink } from 'react-router-dom';
- const Header = () => {
-    return (
-        <header>
-            <h1>Book Management App</h1>
-            <hr />
-            <div className="links">
-                <Navlink to="/" className="link" activateClassName="active" exact>
-                    Book List
-                </Navlink>
-                <Navlink to="/add" className="link" activeClassName="active">
-                    Add Book
-                </Navlink>
-            </div>
-        </header>
-    );
- };
+import { NavLink } from 'react-router-dom';
 
- export default Header;
+const Header = () => {
+  return (
+    <header>
+      <h1>Book Management App</h1>
+      <hr />
+      <div className="links">
+        <NavLink to="/" className="link" activeClassName="active" exact>
+          Books List
+        </NavLink>
+        <NavLink to="/add" className="link" activeClassName="active">
+          Add Book
+        </NavLink>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

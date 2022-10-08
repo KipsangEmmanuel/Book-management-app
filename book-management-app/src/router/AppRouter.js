@@ -1,8 +1,8 @@
-import react from 'react';
-import { BrowserRouter, Switch, Route } from 'rect-router-dom';
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from '../components/Header';
 import AddBook from '../components/AddBook';
-import BookList from '..components/BookList';
+import BooksList from '../components/BooksList';
 
 const AppRouter = () => {
     return (
@@ -10,10 +10,10 @@ const AppRouter = () => {
             <div>
                 <Header />
                 <div className="main-content">
-                    <Switch>
-                        <Route component={BookList} path="/" exact={true} />
-                        <Route component={AddBook} path="/" />
-                    </Switch>
+                    <switch>
+                        <Route component={BooksList} path="/" exact={true} />
+                        <Route conponent={AddBook} path="/add" />
+                    </switch>
                 </div>
             </div>
         </BrowserRouter>
